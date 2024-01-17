@@ -2,3 +2,37 @@
     margin : 0;
     padding: 0;
 }
+:root{
+    --cor-header :  #12093e;
+    --cor-texto :  #fff;
+}
+header{
+    background-color: var(--cor-header);
+    background:linear-gradient(to bottom, #fff,#12093e);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+body{
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    background-color: var(--cor-header);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+h3{
+    margin: 1rem;
+}
+.class{
+    display: block;
+}
+.notas{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+button{
+    margin-bottom: 1rem;
+}

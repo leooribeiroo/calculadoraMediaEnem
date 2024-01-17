@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Calculadora Média Enem</title>
 </head>
+
 <body>
     <header>
-    <h1>Calculadora de Média do Enem</h1><hr>
-    <p>Dica: Os números a serem digitados devem estar no seguinte formato:</p>
-    <p>ex: 123.4 </p>
-    <p>ex: 567 </p>
-</header>
+        <h1>Calculadora de Média do Enem</h1>
+        <hr>
+        <p>Dica: Os números a serem digitados devem estar no seguinte formato:</p>
+        <p>ex: 123.4 </p>
+        <p>ex: 567 </p>
+    </header>
     <main>
         <nav id="notasGerais">
+            <section class="pesos">
+                <h3>Digite os pesos de cada Área:</h3>
+                <label for="pesoRedacao">Redação:</label>
+                <input type="text" id="pesoRedacao" name="pesoRedacao">
 
-        <h3>Digite os pesos de cada Área:</h3>
-        <label for="pesoRedacao">Redação:</label>
-        <input type="text" id="pesoRedacao" name="pesoRedacao">
+                <label for="pesoMatematica">Matemática:</label>
+                <input type="text" id="pesoMatematica" name="pesoMatematica">
 
-        <label for="pesoMatematica">Matemática:</label>
-        <input type="text" id="pesoMatematica" name="pesoMatematica">
+                <label for="pesoLinguagens">Linguagens:</label>
+                <input type="text" id="pesoLinguagens" name="pesoLinguagens">
 
-        <label for="pesoLinguagens">Linguagens:</label>
-        <input type="text" id="pesoLinguagens" name="pesoLinguagens">
+                <label for="pesoCienciasDaNatureza">Ciências da Natureza:</label>
+                <input type="text" id="pesoCienciasDaNatureza" name="pesoCienciasDaNatureza">
 
-        <label for="pesoCienciasDaNatureza">Ciências da Natureza:</label>
-        <input type="text" id="pesoCienciasDaNatureza" name="pesoCienciasDaNatureza">
+                <label for="pesoCienciasHumanas">Ciências Humanas:</label>
+                <input type="text" id="pesoCienciasHumanas" name="pesoCienciasHumanas">
+            </section>
+            <section class="notas">
+                <h3>Digite as suas notas em cada Área:</h3>
+                <label for="notaRedacao">Redação:</label>
+                <input type="text" id="notaRedacao" name="notaRedacao">
 
-        <label for="pesoCienciasHumanas">Ciências Humanas:</label>
-        <input type="text" id="pesoCienciasHumanas" name="pesoCienciasHumanas"><hr>
+                <label for="notaMatematica">Matemática:</label>
+                <input type="text" id="notaMatematica" name="notaMatematica">
 
-        <h3>Digite as suas notas em cada Área:</h3>
-        <label for="notaRedacao">Redação:</label>
-        <input type="text" id="notaRedacao" name="notaRedacao">
+                <label for="notaLinguagens">Linguagens:</label>
+                <input type="text" id="notaLinguagens" name="notaLinguagens">
 
-        <label for="notaMatematica">Matemática:</label>
-        <input type="text" id="notaMatematica" name="notaMatematica">
+                <label for="notaCienciasDaNatureza">Ciências da Natureza:</label>
+                <input type="text" id="notaCienciasDaNatureza" name="notaCienciasDaNatureza">
 
-        <label for="notaLinguagens">Linguagens:</label>
-        <input type="text" id="notaLinguagens" name="notaLinguagens">
+                <label for="notaCienciasHumanas">Ciências Humanas:</label>
+                <input type="text" id="notaCienciasHumanas" name="notaCienciasHumanas">
+            </section>
 
-        <label for="notaCienciasDaNatureza">Ciências da Natureza:</label>
-        <input type="text" id="notaCienciasDaNatureza" name="notaCienciasDaNatureza">
-
-        <label for="notaCienciasHumanas">Ciências Humanas:</label>
-        <input type="text" id="notaCienciasHumanas" name="notaCienciasHumanas"><hr>
-        <button type="button" onclick="calcularMedia()">Calcular Média</button>
-        <button type="button" onclick="limparTela()">Limpar Tela</button>
-    </nav>
-<section>
-    <ul id="mediaFinal">Média:</ul>
-</section>
+            <button type="button" onclick="calcularMedia()">Calcular Média</button>
+            <button type="button" onclick="limparTela()">Limpar Tela</button>
+        </nav>
+        <section>
+            <ul id="mediaFinal">Média:</ul>
+        </section>
     </main>
 
     <script src="index.js"></script>
 </body>
+
 </html>
