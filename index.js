@@ -16,9 +16,11 @@ function calcularMedia() {
 
     if (isNaN(pRedacao) || isNaN(pMatematica) || isNaN(pLinguagens) || isNaN(pNatureza) || isNaN(pHumanas) ||
         isNaN(nRedacao) || isNaN(nRedacao) || isNaN(nRedacao) || isNaN(nRedacao) || isNaN(nRedacao)) {
-        alert("Digita um número nesta porra sua gabriela do caralho pqp")
+        alert("Valor Inválido Digitado. Por favor, tente novamente.")
         return;
     }
+
+    
 
     let media = (((pRedacao * nRedacao) + (pMatematica * nMatematica) + (pLinguagens * nLinguagens) + (pNatureza * nNatureza) + (pHumanas * nHumanas)) / (pRedacao + pMatematica + pLinguagens + pNatureza + pHumanas))
 
